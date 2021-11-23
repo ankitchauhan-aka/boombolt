@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Email-Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <style>
+    p,
+    span {
+      color: #132222 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-div" style="background-color: #f5f6f7; width: 80%; margin: auto; padding: 30px;">
+    <div class="container">
+      <div class="row">
+        <div>
+          <h6 class=""
+            style="font-weight:bold;color:rgba(31, 31, 31, 0.7); font-size: 16px; margin-top: 15px; font-family: 'Mulish', sans-serif;">
+            Registration With Boombolt is successfully done
+          </h6>
+        </div>
+      </div>
+      <div class="row">
+        <div lass="content-div" style="border-bottom: 4px solid rgb(196, 196, 196);">
+          <div style=" background-color: white; padding: 25px;">
+            <h1 style="font-family: 'Mulish', sans-serif;">Welcome to Boombolt</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="footer-div">
+          <p style="font-family: 'Mulish', sans-serif; margin-top: 0px;">
+            This email was sent to
+            <a style="font-weight: bold; color: #00b159" href="">
+              <%= emailTemplate?.user?.email %>
+            </a>
+            <p> You can login with your registered email id and your password. Thank You!</p>
+          </p>
+          <a style="
+          font-weight: bold;
+          text-decoration: underline;
+          font-family: 'Mulish', sans-serif;
+          color: #2377db;
+        " href="">View and Manage </a><span style="font-family: 'Mulish', sans-serif">your subscription
+            online.</span>
+          
+          <p style="font-family: 'Mulish', sans-serif">
+            You're receiving this because you've signed up for a new account.
+            Your given data is processed by Boombolt. All the data security
+            protocol are strictly in place. You have the right to access,
+            modify, rectify and delete these data. Check out our complete
+            <a style="font-weight: bold; color: #2377db" href="<%= appUrl %>/privacy-policy">Privacy
+              Policy</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
